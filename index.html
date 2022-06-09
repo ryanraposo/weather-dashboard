@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+    />
+    <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <p class="navbar-brand mx-auto">
+          Weather Dashboard
+        </p>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar col-5">
+                <h4>Search for a City:</h4>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Toronto" aria-label="Search for a City:" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">Search</button>
+                    </div>
+                </div>
+                <hr/>
+                <button class="btn-block btn-outline-secondary">Austin</button>
+                <button class="btn-block btn-outline-secondary">Chicago</button>
+                <button class="btn-block btn-outline-secondary">New York</button>
+                <button class="btn-block btn-outline-secondary">Orlando</button>
+                <button class="btn-block btn-outline-secondary">San Francisco</button>
+                <button class="btn-block btn-outline-secondary">Seattle</button>
+                <button class="btn-block btn-outline-secondary">Denver</button>
+                <button class="btn-block btn-outline-secondary">Atlanta</button>
+            </div>
+            <div class="main col-7">
+                <div class="info-panel jumbotron">
+                    <h4>City (9/6/2021) ☁</h4>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                    <p>UV Index:</p>
+                </div>
+                <h4>5 Day Forecast:</h4>
+                <div class="row">
+                    <div class="col-lg">
+                        <h5>One</h5>
+                        <p>☁</p>
+                        <p>Temp:</p>
+                        <p>Wind:</p>
+                        <p>Humidity:</p>
+                    </div>
+                    <div class="col-lg">
+                        <h5>Two</h5>
+                        <p>☁</p>
+                        <p>Temp:</p>
+                        <p>Wind:</p>
+                        <p>Humidity:</p>
+                    </div>
+                    <div class="col-lg">
+                        <h5>Three</h5>
+                        <p>☁</p>
+                        <p>Temp:</p>
+                        <p>Wind:</p>
+                        <p>Humidity:</p>
+                    </div>
+                    <div class="col-lg">
+                        <h5>Four</h5>
+                        <p>☁</p>
+                        <p>Temp:</p>
+                        <p>Wind:</p>
+                        <p>Humidity:</p>
+                    </div>
+                    <div class="col-lg">
+                        <h5>Five</h5>
+                        <p>☁</p>
+                        <p>Temp:</p>
+                        <p>Wind:</p>
+                        <p>Humidity:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
