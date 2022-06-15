@@ -59,7 +59,7 @@ function applyWeather(weather) {
 
 function searchCity(input) {
     if (input) {
-        let weather = getWeather(input).then(weather => {
+        getWeather(input).then(weather => {
             applyWeather(weather);
         });
     }
@@ -77,3 +77,11 @@ $('#input-search').keypress((e) => {
         searchCity(value);
     }
 });
+
+$(document).on({
+    "click": function () {
+        const city = $(this).text();
+        getWeather(city).then((weather) => {
+            applyWeather(weather);
+        });
+}}, '#btn-preset');
