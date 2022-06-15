@@ -7,6 +7,7 @@ async function getWeather(cityName) {
         const daily = data.days[x];
         let newDaily = {
             city: data.address,
+            date: daily.datetime,
             temp: daily.temp,
             humidity: daily.humidity,
             uvindex: daily.uvindex,
@@ -18,18 +19,42 @@ async function getWeather(cityName) {
 }
 
 function applyWeather(weather) {
-    // Set Info Panel 
-    const hInfoPanelCity = document.querySelector('#h-info-panel-city');
-    hInfoPanelCity.innerText = "City: " + weather[0].city;
+    // Set Info Panel
+    $('#h-info-panel-city').text(weather[0].city);
+    $('#p-info-panel-temp').text("Temp: " + weather[0].temp);
+    $('#p-info-panel-humidity').text("Humidity: " + weather[0].humidity);
+    $('#p-info-panel-UV-Index').text("UV-Index: " + weather[0].uvindex);
 
-    const pInfoPanelTemp = document.querySelector('#p-info-panel-temp');
-    pInfoPanelTemp.innerText = "Temp: " + weather[0].temp;
+    // Set Day One
+    $('#h-day-one-date').text(weather[0].date);
+    $('#p-day-one-temp').text("Temp: " + weather[0].temp);
+    $('#p-day-one-wind').text("Wind: " + weather[0].wind);
+    $('#p-day-one-humidity').text("Humidity: " + weather[0].humidity);
 
-    const pInfoPanelHumidity = document.querySelector('#p-info-panel-humidity');
-    pInfoPanelHumidity.innerText = "Humidity: " + weather[0].humidity;
+    // Set Day Two
+    $('#h-day-two-date').text(weather[1].date);
+    $('#p-day-two-temp').text("Temp: " + weather[1].temp);
+    $('#p-day-two-wind').text("Wind: " + weather[1].wind);
+    $('#p-day-two-humidity').text("Humidity: " + weather[1].humidity);
 
-    const pInfoPanelUVIndex = document.querySelector('#p-info-panel-UV-Index')
-    pInfoPanelUVIndex.innerText = "UV-Index: " + weather[0].uvindex;
+    // Set Day Three
+    $('#h-day-three-date').text(weather[2].date);
+    $('#p-day-three-temp').text("Temp: " + weather[2].temp);
+    $('#p-day-three-wind').text("Wind: " + weather[2].wind);
+    $('#p-day-three-humidity').text("Humidity: " + weather[2].humidity);
+
+    // Set Day Four
+    $('#h-day-four-date').text(weather[3].date);
+    $('#p-day-four-temp').text("Temp: " + weather[3].temp);
+    $('#p-day-four-wind').text("Wind: " + weather[3].wind);
+    $('#p-day-four-humidity').text("Humidity: " + weather[3].humidity);
+
+    // Set Day Five
+    $('#h-day-five-date').text(weather[4].date);
+    $('#p-day-five-temp').text("Temp: " + weather[4].temp);
+    $('#p-day-five-wind').text("Wind: " + weather[4].wind);
+    $('#p-day-five-humidity').text("Humidity: " + weather[4].humidity);
+
 }
 
 function searchCity(input) {
