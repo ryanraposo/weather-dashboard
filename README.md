@@ -10,6 +10,10 @@ Weather at a glance.
 - CSS
 - JS
 
+## Screenshot
+
+![Screenshot](./assets/img/ss-1.png)
+
 ## Website
 
 https://ryanraposo.github.io/weather-dashboard
